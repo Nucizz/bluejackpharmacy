@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:outlineSpotShadowColor="@color/white"
+    android:clickable="true"
+    android:layout_marginBottom="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToOutline="true"
+                    android:src="@drawable/vec_medicine"
+                    android:background="@drawable/rounded_15" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_frame_15"
+                    />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:text="Title"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/poppins"
+                    android:textFontWeight="600"
+                    android:textSize="20sp"
+                    android:textColor="@color/pure_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:text="dd mmmm yyyy, hh:mm"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/poppins"
+                    android:textFontWeight="500"
+                    android:textSize="16sp"
+                    android:textColor="@color/grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/priceQty"
+                    android:text="IDR Price • Qty Items"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/poppins"
+                    android:textFontWeight="500"
+                    android:textSize="16sp"
+                    android:textColor="@color/grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/darker_gray"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IDR Total Price"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/poppins"
+                android:textFontWeight="500"
+                android:textSize="20sp"
+                android:textColor="@color/pure_black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/modify"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/poppins"
+                android:textFontWeight="600"
+                android:textSize="16sp"
+                android:textColor="@color/pure_white"
+                android:drawableLeft="@drawable/ic_modify"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text=" Modify"
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_gradient_15"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/expandable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/decreaseQty"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_min"
+                    android:textColor="@color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/rounded_gradient_15" />
+
+                <EditText
+                    android:id="@+id/numberQty"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAlignment="center"
+                    android:text="1"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/poppins"
+                    android:textFontWeight="600"
+                    android:textSize="16sp"
+                    android:textColor="@color/pure_black"
+                    android:inputType="number"
+                    android:background="@drawable/rounded_15"
+                    android:backgroundTint="@color/light_grey"/>
+
+                <ImageButton
+                    android:id="@+id/increaseQty"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_add"
+                    android:textColor="@color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/rounded_gradient_15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="1"
+                android:paddingTop="15dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/delete"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/rounded_15"
+                    android:backgroundTint="@color/error"
+                    android:drawableLeft="@drawable/ic_delete"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/poppins"
+                    android:textFontWeight="600"
+                    android:textSize="16sp"
+                    android:textColor="@color/pure_white"
+                    android:gravity="center"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text=" Delete"
+                    android:textAllCaps="false" />
+
+                <View
+                    android:layout_width="25dp"
+                    android:layout_height="1dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/save"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/rounded_gradient_15"
+                    android:drawableLeft="@drawable/ic_save"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/poppins"
+                    android:textFontWeight="600"
+                    android:gravity="center"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text=" Save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/pure_white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

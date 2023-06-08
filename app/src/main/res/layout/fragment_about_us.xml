@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.main.AboutUsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingBottom="100dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your health, Our priority."
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/pure_black"
+                android:textSize="24dp"
+                android:textFontWeight="600"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Bluejack Pharmacy, where we are dedicated to providing you with the highest quality healthcare products and services. Our pharmacy was founded by the Bluejackets Community, and we take pride in being a part of this vibrant community that we serve."
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/grey"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:includeFontPadding="false"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/logo"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our Vision"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/pure_black"
+                android:textSize="24dp"
+                android:textFontWeight="600"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To be the leading provider of healthcare products and services in Indonesia, delivering exceptional customer service and personalized care to you."
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/grey"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:includeFontPadding="false"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our Mission"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/pure_black"
+                android:textSize="24dp"
+                android:textFontWeight="600"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="To improve community health through accessible, high-quality care delivered with compassion, excellence and to exceed their expectations through innovation and continuous improvement."
+                android:textColor="@color/grey"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:includeFontPadding="false"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find Us"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/pure_black"
+                android:textSize="24dp"
+                android:textFontWeight="600"
+                android:padding="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:cardCornerRadius="15dp">
+
+                <com.google.android.gms.maps.MapView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/googleMaps"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

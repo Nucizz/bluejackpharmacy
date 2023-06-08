@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.OTPActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@color/pure_black"
+        android:textFontWeight="500"
+        android:textSize="16sp"
+        android:layout_margin="15dp"
+        android:drawableLeft="@drawable/ic_back_arrow"
+        android:drawableTint="@color/pure_black"
+        android:drawablePadding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="35dp"
+            android:src="@drawable/vec_verification" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:includeFontPadding="false"
+            android:text="OTP Verification"
+            android:textAlignment="center"
+            android:textColor="@color/pure_black"
+            android:textFontWeight="600"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="18">
+
+            <EditText
+                android:id="@+id/code1"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_15"
+                android:backgroundTint="@color/light_grey"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:inputType="number"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textColor="@color/pure_black"
+                android:textFontWeight="600"
+                android:textSize="32dp" />
+
+            <EditText
+                android:id="@+id/code2"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_15"
+                android:backgroundTint="@color/light_grey"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:inputType="number"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textColor="@color/pure_black"
+                android:textFontWeight="600"
+                android:textSize="32dp" />
+
+            <EditText
+                android:id="@+id/code3"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_15"
+                android:backgroundTint="@color/light_grey"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:inputType="number"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textColor="@color/pure_black"
+                android:textFontWeight="600"
+                android:textSize="32dp" />
+
+            <EditText
+                android:id="@+id/code4"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_15"
+                android:backgroundTint="@color/light_grey"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:inputType="number"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textColor="@color/pure_black"
+                android:textFontWeight="600"
+                android:textSize="32dp" />
+
+            <EditText
+                android:id="@+id/code5"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_15"
+                android:backgroundTint="@color/light_grey"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:inputType="number"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textColor="@color/pure_black"
+                android:textFontWeight="600"
+                android:textSize="32dp" />
+
+            <EditText
+                android:id="@+id/code6"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_15"
+                android:backgroundTint="@color/light_grey"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:inputType="number"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textColor="@color/pure_black"
+                android:textFontWeight="600"
+                android:textSize="32dp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/verify"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="50dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/poppins"
+            android:textFontWeight="600"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_gradient_15"
+            android:textAllCaps="false"
+            android:text="Verify"
+            />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/poppins"
+            android:textFontWeight="500"
+            android:textSize="14sp"
+            android:textColor="@color/grey"
+            android:text="0808 0909 0123" />
+
+        <TextView
+            android:id="@+id/resendCooldown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/poppins"
+            android:textFontWeight="400"
+            android:textSize="14sp"
+            android:textColor="@color/grey"
+            android:text="Didn't recieve a code?" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/resendCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/poppins"
+            android:textFontWeight="600"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:text="RESEND CODE" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

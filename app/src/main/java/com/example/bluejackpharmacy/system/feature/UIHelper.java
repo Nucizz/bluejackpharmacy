@@ -91,7 +91,7 @@ public class UIHelper {
 
     public static boolean liveValPassword(String text) {
         int len = text.length();
-        if(len < 8) {
+        if(len < 5) {
             return false;
         } else if(len > 20) {
             return false;
